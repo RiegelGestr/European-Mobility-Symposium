@@ -1,0 +1,30 @@
+site:
+  title: "European Mobility Symposium"
+  subtitle: "Pisa, 21-22 November, 2024"
+  description: "The European Mobility Symposium has the goal of sharing insights from recent works on human mobility and exploring new perspectives and potential collaborations—both in terms of research papers and project proposals."
+  url: "https://username.github.io/european-mobility-symposium"  # Update with your GitHub username
+  author: "EMS 2024 Organizing Committee"
+
+# Bootstrap and styling configuration
+theme:
+  bootstrap_version: "5.3.0"
+  bootstrap_theme: "default"  # or "dark", "primary", etc.
+  custom_css: true
+
+# Social media and contact information
+social:
+  github: "https://github.com/username/european-mobility-symposium"  # Update with actual repo
+  email: "info@europeanmobilitysymposium.org"
+
+# Navigation menu items
+navigation:
+  - name: "Home"
+    url: "#welcome"
+  - name: "Participants"
+    url: "#participants"
+  - name: "Organizers"
+    url: "#organizers"
+  - name: "Program"
+    url: "#program"
+  - name: "Location"
+    url: "#location"

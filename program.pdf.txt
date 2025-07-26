@@ -1,0 +1,9 @@
+This is a placeholder for the program.pdf file.
+
+In a production environment, you would replace this with the actual 
+European Mobility Symposium program PDF file.
+
+To add the real PDF:
+1. Save your program PDF as 'assets/program.pdf'
+2. Update the symposium.yaml content file if needed
+3. Rebuild the site with 'python build.py'

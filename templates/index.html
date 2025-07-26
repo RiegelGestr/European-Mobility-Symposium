@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#welcome">{{ symposium.site.title }}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#participants">Participants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#organizers">Organizers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="mb-5">
+        <img src="{{ symposium.hero_image }}" class="img-fluid w-100" alt="Conference banner">
+    </header>
+    <!-- Hero Section -->
+    <section id="welcome" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold text-primary mb-3">{{ symposium.site.title }}</h1>
+                    <h2 class="h4 text-secondary mb-4">{{ symposium.site.subtitle }}</h2>
+                    <p class="lead">{{ symposium.site.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-building fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">🏢 Venue</h5>
+                            <p class="card-text">{{ symposium.event.venue }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">📅 Dates</h5>
+                            <p class="card-text">{{ symposium.event.dates }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">📍 Location</h5>
+                            <p class="card-text">{{ symposium.event.location_name }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section id="location" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">📍 Location</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s45.0408061,7.6661456!6i17!3m1!1sen!5m1!1sen"
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="mt-3">
+                                <strong>{{ symposium.event.location_name }}</strong><br>
+                                {{ symposium.event.address }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmed Participants -->
+    <section id="participants" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Confirmed Participants</h2>
+            <p class="text-center text-muted mb-4">
+                The following is a list of confirmed participants for the event, organized alphabetically by their affiliated institutions.
+            </p>
+            <div class="row">
+                {% for participant in symposium.participants %}
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary fw-bold">{{ participant.institution }}</h5>
+                            <ul class="list-unstyled">
+                                {% for person in participant.people %}
+                                <li class="mb-1">
+                                    <i class="fas fa-user text-secondary me-2"></i>{{ person }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Organizers</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-primary">Steering Committee:</h5>
+                                <ul class="list-unstyled">
+                                    {% for member in symposium.organizers.steering_committee %}
+                                    <li class="mb-2">
+                                        <i class="fas fa-star text-warning me-2"></i>{{ member }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-primary">Web Chair:</h5>
+                                <p class="mb-0">
+                                    <i class="fas fa-globe text-info me-2"></i>{{ symposium.organizers.web_chair }}
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 class="fw-bold text-primary">Local Chair:</h5>
+                                <p class="mb-0">
+                                    <i class="fas fa-map-marker-alt text-success me-2"></i>{{ symposium.organizers.local_chair }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="mb-4">Program</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-file-pdf fa-4x text-danger mb-3"></i>
+                            <h5>Program PDF</h5>
+                            <p class="text-muted">{{ symposium.program.description }}</p>
+                            <a href="{{ symposium.program.pdf_link }}" class="btn btn-primary btn-lg" target="_blank">
+                                <i class="fas fa-download me-2"></i>Download Program
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Sponsors</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+            {% for sp in symposium.sponsors %}
+            <div class="col text-center">
+                <a href="{{ sp.url }}" target="_blank" rel="noopener">
+                <img src="{{ sp.logo }}" class="img-fluid sponsor-logo"
+                    alt="{{ sp.name }} logo">
+                </a>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Sponsors -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>{{ symposium.site.title }}</h5>
+                    <p class="text-light">{{ symposium.site.subtitle }}</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 European Mobility Symposium</p>
+                    <p class="mb-0">Built with <i class="fas fa-heart text-danger"></i> using Python & Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

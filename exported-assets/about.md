@@ -1,0 +1,1 @@
+The European Mobility Symposium is a two-day event focused on advancing research and collaboration in human mobility studies. Participants include academics, industry experts, and policymakers.

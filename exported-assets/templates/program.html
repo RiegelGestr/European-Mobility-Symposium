@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-5">
+  <h1>Program</h1>
+  {% if program_pdf %}
+  <p>You can download the full program <a href="/program/{{ program_pdf }}">here</a>.</p>
+  {% endif %}
+  {% if content.program_schedule %}
+  {{ content.program_schedule | safe }}
+  {% endif %}
+</div>
+{% endblock %}
