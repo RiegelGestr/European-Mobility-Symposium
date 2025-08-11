@@ -80,20 +80,48 @@ participants:
 
 organizers:
   steering_committee:
+    - "Jose Ramasco (Institute for Cross-Disciplinary Physics and Complex Systems, Spain)"
     - "Luca Pappalardo (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)"
     - "Riccardo Di Clemente (Northeastern University of London, UK)"
   web_chair: "Antonio Desiderio (ISI Foundation, Turin, Italy)"
   local_chair: "Mattia Mazzoli (ISI Foundation, Turin, Italy)"
 
-hero_image: assets/images/hero.jpeg
+hero_image: assets/images/torino.jpg
 
 sponsors:
-  - name: Sponsor A
-    logo: assets/images/sponsors/logo_a.png
-    url:  https://www.dut-coline.org
-  - name: Sponsor B
-    logo: assets/images/sponsors/logo_b.png
-    url:  https://www.dut-coline.org
+  - name: CCL
+    logo: assets/images/sponsors/ccl.jpeg
+    url: https://www.riccardodiclemente.com
+  - name: DUT
+    logo: assets/images/sponsors/dut.png
+    url: https://www.dut-coline.org
+  - name: KDD
+    logo: assets/images/sponsors/kdd.jpg
+    url: https://kdd.isti.cnr.it
+  - name: SNS
+    logo: assets/images/sponsors/sns.png
+    url: https://www.sns.it/
+  - name: CNR
+    logo: assets/images/sponsors/cnr.png
+    url: https://www.isti.cnr.it/it/
+  - name: IFISC
+    logo: assets/images/sponsors/ifisc.png
+    url: https://ifisc.uib-csic.es/en/
+  - name: NETSI
+    logo: assets/images/sponsors/netsi.png
+    url: https://www.nulondon.ac.uk/research/network-science/
+  - name: SoBigData
+    logo: assets/images/sponsors/sobigdata.png
+    url: https://www.sobigdata.eu
+  - name: COLINE
+    logo: assets/images/sponsors/coline.png
+    url: https://www.dut-coline.org
+  - name: ISI
+    logo: assets/images/sponsors/isi.png
+    url: https://www.isi.it
+  - name: NUL
+    logo: assets/images/sponsors/nul.png
+    url: https://www.nulondon.ac.uk
 
 program:
   pdf_link: "assets/program.pdf"
