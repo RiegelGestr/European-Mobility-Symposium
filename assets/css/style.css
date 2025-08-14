@@ -253,3 +253,17 @@ section:before {
 ::-webkit-scrollbar-thumb:hover {
     background: #209094;
 }
+
+#sponsors .sponsor-logo {
+  max-height: 150px;      /* pick the height you want */
+  width: auto;            /* preserve aspect ratio */
+  object-fit: contain;    /* prevent cropping or distortion */
+  display: inline-block;  /* ensure the max-height applies correctly */
+}
+
+/* (Optional) Vertically center smaller logos within their grid cell */
+#sponsors .col.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
