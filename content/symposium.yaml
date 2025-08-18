@@ -1,7 +1,7 @@
 site:
-  title: "European Mobility Symposium"
+  title: "2nd European Mobility Symposium"
   subtitle: "Turin, 25-26 September, 2025"
-  description: "The European Mobility Symposium has the goal of sharing insights from recent works on human mobility and exploring new perspectives and potential collaborations—both in terms of research papers and project proposals."
+  description: "The European Mobility Symposium has the goal of sharing insights from recent works on human mobility and exploring new perspectives and potential collaborations—both in terms of research papers and project proposals. The first edition of the symposium was held in Pisa in 2024."
 
 event:
   venue: "ISI Foundation. Via Chisola, 5, 10126 Turin TO."
@@ -89,12 +89,27 @@ organizers:
 hero_image: assets/images/torino.jpg
 
 sponsors:
-  - name: CCL
-    logo: assets/images/sponsors/ccl.jpeg
-    url: https://www.riccardodiclemente.com
   - name: DUT
     logo: assets/images/sponsors/dut.png
+    url: https://dutpartnership.eu
+  - name: COLINE
+    logo: assets/images/sponsors/coline.png
     url: https://www.dut-coline.org
+  - name: ISI
+    logo: assets/images/sponsors/isi.png
+    url: https://www.isi.it
+  - name: CCL
+    logo: assets/images/sponsors/ccl.jpeg
+    url: https://riccardodiclemente.com/complex_connections_lab.html
+  - name: IFISC
+    logo: assets/images/sponsors/ifisc.png
+    url: https://ifisc.uib-csic.es/en/
+  - name: NETSI
+    logo: assets/images/sponsors/netsi.png
+    url: https://www.networkscienceinstitute.org
+  - name: NUL
+    logo: assets/images/sponsors/nul.png
+    url: https://www.nulondon.ac.uk/research/network-science/
   - name: KDD
     logo: assets/images/sponsors/kdd.jpg
     url: https://kdd.isti.cnr.it
@@ -104,24 +119,6 @@ sponsors:
   - name: CNR
     logo: assets/images/sponsors/cnr.png
     url: https://www.isti.cnr.it/it/
-  - name: IFISC
-    logo: assets/images/sponsors/ifisc.png
-    url: https://ifisc.uib-csic.es/en/
-  - name: NETSI
-    logo: assets/images/sponsors/netsi.png
-    url: https://www.nulondon.ac.uk/research/network-science/
-  - name: SoBigData
-    logo: assets/images/sponsors/sobigdata.png
-    url: https://www.sobigdata.eu
-  - name: COLINE
-    logo: assets/images/sponsors/coline.png
-    url: https://www.dut-coline.org
-  - name: ISI
-    logo: assets/images/sponsors/isi.png
-    url: https://www.isi.it
-  - name: NUL
-    logo: assets/images/sponsors/nul.png
-    url: https://www.nulondon.ac.uk
 
 program:
   pdf_link: "assets/program.pdf"

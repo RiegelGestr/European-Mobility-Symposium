@@ -425,17 +425,32 @@
         </div>
     </section>
 
-    <!-- Sponsors -->
-    <section class="py-5 bg-light">
+    <section id="sponsors">
+    <div class="container">
+        <h2>Sponsors</h2>
+        <div class="row">
+        {% for sponsor in sponsors %}
+        <div class="col-md-3 mb-4">
+            <img src="{{ sponsor.logo_url }}" alt="{{ sponsor.name }} logo">
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+    </section>
+
+    <section id="sponsors">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2>Sponsors</h2>
-                    <p class="text-muted">Information about symposium sponsors will be added here.</p>
-                </div>
+            <h2>Sponsors</h2>
+            <div class="sponsor-logos">
+            {% for sponsor in sponsors %}
+            <div class="sponsor-logo">
+                <img src="{{ sponsor.logo_url }}" alt="{{ sponsor.name }} logo" class="img-fluid">
+            </div>
+            {% endfor %}
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
