@@ -10,72 +10,79 @@ event:
   address: "Via Chisola, 5, 10126 Turin TO, Italy"
 
 participants:
-  - institution: "Central European University, Austria"
+  - institution: "TBA"
     people:
-      - "Márton Karsai"
-      - "Elisa Omodei"
+      - "TBA"
+  - institution: "TBA"
+    people:
+      - "TBA"
 
-  - institution: "Corvinus University, Hungary"
-    people:
-      - "Balázs Lengyel"
-      - "Gergő Pintér"
+  #- institution: "Central European University, Austria"
+  #  people:
+  #    - "Márton Karsai"
+  #    - "Elisa Omodei"
+
+  #- institution: "Corvinus University, Hungary"
+  #  people:
+  #    - "Balázs Lengyel"
+  #    - "Gergő Pintér"
       
 
-  - institution: "Mobile and Social Computing Lab - Fondazione Bruno Kessler, Trento, Italy"
-    people:
-      - "Sebastiano Bontorin"
-      - "Bruno Lepri"
-      - "Massimiliano Luca"
+  #- institution: "Mobile and Social Computing Lab - Fondazione Bruno Kessler, Trento, Italy"
+  #  people:
+  #    - "Sebastiano Bontorin"
+  #    - "Bruno Lepri"
+  #    - "Massimiliano Luca"
 
 
-  - institution: "CHuB - Fondazione Bruno Kessler, Trento, Italy"
-    people:
-      - "Riccardo Gallotti"
-      - "Andrea Guizzo"
+  #- institution: "CHuB - Fondazione Bruno Kessler, Trento, Italy"
+  #  people:
+  #    - "Riccardo Gallotti"
+  #    - "Andrea Guizzo"
 
-  - institution: "ISI Foundation, Italy"
-    people:
-      - "Antonio Desiderio"
-      - "Leo Ferres"
-      - "Kyriaki Kalimeri"
-      - "Mattia Mazzoli"
-      - "Rossano Schifanella"
+  #- institution: "ISI Foundation, Italy"
+  #  people:
+  #    - "Antonio Desiderio"
+  #    - "Leo Ferres"
+  #    - "Kyriaki Kalimeri"
+  #    - "Mattia Mazzoli"
+  #    - "Rossano Schifanella"
 
-  - institution: "ISTI-CNR, Pisa, Italy"
-    people:
-      - "Giuliano Cornacchia"
-      - "Paolo De Biase"
-      - "Giovanni Mauro (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)"
-      - "Mirco Nanni"
-      - "Luca Pappalardo (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)"
+  #- institution: "ISTI-CNR, Pisa, Italy"
+  #  people:
+  #    - "Giuliano Cornacchia"
+  #    - "Paolo De Biase"
+  #    - "Giovanni Mauro (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)"
+  #    - "Mirco Nanni"
+  #    - "Luca Pappalardo (ISTI-CNR and Scuola Normale Superiore, Pisa, Italy)"
 
-  - institution: "Northeastern University of London, UK"
-    people:
-      - "Riccardo Di Clemente"
-      - "Nandini Iyer"
+  #- institution: "Northeastern University of London, UK"
+  #  people:
+  #    - "Riccardo Di Clemente"
+  #    - "Nandini Iyer"
 
-  - institution: "Sony CSL, Italy"
-    people:
-      - "Matteo Bruno"
-      - "Vittorio Loreto"
-      - "Hygor Piaget Monteiro Melo"
+  #- institution: "Sony CSL, Italy"
+  #  people:
+  #    - "Matteo Bruno"
+  #    - "Vittorio Loreto"
+  #    - "Hygor Piaget Monteiro Melo"
 
-  - institution: "Technical University of Denmark, Denmark"
-    people:
-      - "Laura Alessandretti"
+  #- institution: "Technical University of Denmark, Denmark"
+  #  people:
+  #    - "Laura Alessandretti"
 
-  - institution: "University of Exeter, UK"
-    people:
-      - "Federico Botta"
-      - "Ronaldo Menezes"
+  #- institution: "University of Exeter, UK"
+  #  people:
+  #    - "Federico Botta"
+  #    - "Ronaldo Menezes"
 
-  - institution: "Wroclaw University of Environmental and Life Sciences, Poland"
-    people:
-      - "Kamil Smolak"
+  #- institution: "Wroclaw University of Environmental and Life Sciences, Poland"
+  #  people:
+  #    - "Kamil Smolak"
 
-  - institution: "Institute for Cross-Disciplinary Physics and Complex Systems, Spain"
-    people:
-      - "Jose Ramasco"
+  #- institution: "Institute for Cross-Disciplinary Physics and Complex Systems, Spain"
+  #  people:
+  #    - "Jose Ramasco"
 
 
 organizers:
@@ -121,5 +128,5 @@ sponsors:
     url: https://www.isti.cnr.it/it/
 
 program:
-  pdf_link: "assets/program.pdf"
+  pdf_link: "assets/program1.pdf"
   description: "Download the complete symposium program"
